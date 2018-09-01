@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="top|center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tic-Tac-Toe"
+        android:textSize="28dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_marginTop="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/top_left"
+                android:textSize="20dp"
+                android:onClick="takeAction"
+                android:padding="10dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+
+            <Button
+                android:id="@+id/top_middle"
+                android:textSize="20dp"
+                android:onClick="takeAction"
+                android:padding="10dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+
+            <Button
+                android:id="@+id/top_right"
+                android:textSize="20dp"
+                android:onClick="takeAction"
+                android:padding="10dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/middle_left"
+                android:textSize="20dp"
+                android:onClick="takeAction"
+                android:padding="10dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+
+            <Button
+                android:id="@+id/middle_middle"
+                android:textSize="20dp"
+                android:onClick="takeAction"
+                android:padding="10dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+
+            <Button
+                android:id="@+id/middle_right"
+                android:textSize="20dp"
+                android:onClick="takeAction"
+                android:padding="10dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/bottom_left"
+                android:textSize="20dp"
+                android:onClick="takeAction"
+                android:padding="10dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+
+            <Button
+                android:id="@+id/bottom_middle"
+                android:textSize="20dp"
+                android:onClick="takeAction"
+                android:padding="10dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+
+            <Button
+                android:id="@+id/bottom_right"
+                android:textSize="20dp"
+                android:onClick="takeAction"
+                android:padding="10dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:onClick="clearGame"
+        android:id="@+id/clear"
+        android:layout_marginTop="50dp"
+        android:text="New Game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

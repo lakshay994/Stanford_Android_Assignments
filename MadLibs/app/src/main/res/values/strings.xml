@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Mad-Libs</string>
+    <string name="description">Fill in some random words as asked to complete a 
+        random story. You will see the story only after you fill in the words, and 
+        that's part of the fun. \nClick to start....</string>
+    <string name="fillIn">Fill In the Words. \nGet Creative</string>
+</resources>
